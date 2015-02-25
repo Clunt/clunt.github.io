@@ -5,6 +5,7 @@ Sublime Text 汉化：*[流风清音博客](http://haojian138.blog.163.com/)*
 
 ## 插件
 > 插件管理：*[Package Control](https://packagecontrol.io/)*
+Wait View [Sublime Text 3 支持的热门插件推荐](http://www.imjeff.cn/blog/146/)
 
 - *[Emmet](https://packagecontrol.io/packages/Emmet)*
 前端快速补全插件
