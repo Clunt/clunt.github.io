@@ -1,4 +1,4 @@
-clunt.github.io
+Clunt
 ===============
 
-Clunt Blog
+## Clunt Blog
