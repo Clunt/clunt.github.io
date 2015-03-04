@@ -45,12 +45,16 @@
 - ajax 返回html 对其操作
 - nodejs mode层封装
 - 个人博客图片存七牛
+- [最全前端面试问题及答案总结](http://segmentfault.com/blog/trigkit4/1190000002562454?utm_source=Weibo&utm_medium=shareLink&utm_campaign=socialShare)
+- [Understanding delete](http://perfectionkills.com/understanding-delete/)
+- [深入详解javascript之delete操作符](http://www.cnblogs.com/yuzhongwusan/archive/2012/06/14/2549879.html)
 - [JsGetSize](http://www.cnblogs.com/yuteng/articles/1894578.html)
 - [new Image()_百度搜索](http://www.baidu.com/s?wd=new%20Image()&tn=monline_dg&ie=utf-8&bs=new%20Image()%3B&f=8&rsv_bp=1&rsv_sug3=2&rsv_sug4=92&rsv_sug1=2&rsv_sug2=0&inputT=302&rsv_sug=1)
 - [你还在用jquery.lazyload这个坑爹的图片分屏加载插件么？ - 胡尐睿丶 - 博客园](http://www.cnblogs.com/hooray/archive/2011/10/15/2212922.html)
 - [RGB颜色与16进制颜色的换算方法](http://blog.sina.com.cn/s/blog_85295a390101c5d6.html)
 - [ECMA-262](http://www.ecma-international.org/publications/standards/Ecma-262.htm)
 - [使用PM2 Deploy部署基于Git版本管理的网站应用 - TooBug](http://www.toobug.net/article/using_pm2_deploy.html)
+- [弄懂Favicon](http://www.w3cplus.com/css/understand-the-favicon.html)
 - [谈谈JavaScript中的双向数据绑定](http://www.html-js.com/article/1688)
 - [JS中的柯里化(currying)](http://www.zhangxinxu.com/wordpress/2013/02/js-currying/)
 - [利用 new relic 监控 express 项目 - CNode](https://cnodejs.org/topic/53fde58d7c1e2284785cd39e)
