@@ -45,6 +45,11 @@
 - ajax 返回html 对其操作
 - nodejs mode层封装
 - 个人博客图片存七牛
+- [浏览器 http 200(from cache) 和 304](http://blog.csdn.net/joeyon1985/article/details/38729235)
+- [前后端分离的思考与实践](http://ued.taobao.org/blog/2014/04/full-stack-development-with-nodejs/)
+- [60FPS On The Mobile Web](http://engineering.flipboard.com/2015/02/mobile-web/)
+- [关于大型网站技术演进的思考](http://blog.jobbole.com/83475/)
+- [程序员面试：电话面试问答Top 50](http://blog.jobbole.com/84618/)
 - [最全前端面试问题及答案总结](http://segmentfault.com/blog/trigkit4/1190000002562454?utm_source=Weibo&utm_medium=shareLink&utm_campaign=socialShare)
 - [Understanding delete](http://perfectionkills.com/understanding-delete/)
 - [深入详解javascript之delete操作符](http://www.cnblogs.com/yuzhongwusan/archive/2012/06/14/2549879.html)
@@ -86,3 +91,4 @@
 - [BaiduFEX](http://fex.baidu.com/)
 - [socket.io 高并发实战 - CNode](https://cnodejs.org/topic/5492ba8b61491ead0cc7c018)
 - [AskForHelp - Woodpecker Wiki for CPUG](http://wiki.woodpecker.org.cn/moin/AskForHelp)
+- [那些年我们一起追过的缓存写法](http://blog.jobbole.com/83439/)
