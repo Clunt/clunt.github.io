@@ -92,3 +92,8 @@
 - [socket.io 高并发实战 - CNode](https://cnodejs.org/topic/5492ba8b61491ead0cc7c018)
 - [AskForHelp - Woodpecker Wiki for CPUG](http://wiki.woodpecker.org.cn/moin/AskForHelp)
 - [那些年我们一起追过的缓存写法](http://blog.jobbole.com/83439/)
+- [Simple CPU](http://www.simplecpu.com/cpu.html)
+- [Online Python Tutor](http://pythontutor.com/visualize.html)
+- [Styling form controls](http://www.456bereastreet.com/archive/200409/styling_form_controls/)
+- [Scrat - Web APP模块化开发体系](http://scrat-team.github.io/#!/components)
+- [CSS3 Box-sizing](http://www.w3cplus.com/content/css3-box-sizing)
