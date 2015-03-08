@@ -97,3 +97,4 @@
 - [Styling form controls](http://www.456bereastreet.com/archive/200409/styling_form_controls/)
 - [Scrat - Web APP模块化开发体系](http://scrat-team.github.io/#!/components)
 - [CSS3 Box-sizing](http://www.w3cplus.com/content/css3-box-sizing)
+- [一个自用的极简 ORM，带三方缓存支持——Toshihiko](https://cnodejs.org/topic/54f93e9ec0330b8b3e0106ab)
