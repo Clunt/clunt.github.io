@@ -49,3 +49,52 @@ Home(~)下有如下几个文件，在打开终端时会依次加载：
 ## Mysql
 
 - [mac_MySQL安装](http://www.2cto.com/database/201409/332022.html)
+
+## SFTP
+> 举例：
+> 远程主机IP：8.8.8.8 or www.8888.com
+> 用户名：root
+
+命令行：`sftp root@8.8.8.8 or root@www.8888.com`
+回车进入提示符 `sftp>`
+
+- `sftp> get /var/www/sftp.md /home/root/`
+  从远程主机的`/var/www/`目录下将`sftp.md`下载到本地`/home/root/`目录下
+
+- `sftp> put /home/root/sftp.pdf /var/www/`
+  把本地`/home/root/s`目录下的`sftp.pdf`文件上传至远程主机`/var/www/`目录下
+
+- `sftp> get -r /var/www/* /home/root/`
+  从远程主机的`/var/www/`文件夹（*目录内所有文件*）下载到本地`/home/root/`目录下
+
+- `sftp> put -r /home/root/* /var/www/`
+  把本地`/home/root/`文件夹（*目录内所有文件*）上传至远程主机`/var/www/`目录下
+
+- `sftp> get -r /var/www/ /home/root/`
+  从远程主机的`/var/www/`文件夹下载到本地`/home/root/`目录下
+  --> `/home/root/www/`
+
+- `sftp> put -r /home/root/ /var/www/`
+  把本地`/home/root/`文件夹上传至远程主机`/var/www/`目录下
+  --> `/var/www/root`
+
+
+### 查询命令
+> 远程主机`基本命令`，本机`l + 基本命令`
+  eg. 远程主机的当前路径：`pwd`，本机当前路径：`lpwd`
+
+
+可使用的命令：
+
+- `cd`
+- `ls`
+- `rm`
+- `rmdir`
+- `mkdir`
+
+**离开**sftp，用`exit` or `quit` or `bye`均可
+
+### 更多
+`man sftp`
+
+
