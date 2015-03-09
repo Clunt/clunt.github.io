@@ -50,6 +50,42 @@ Home(~)下有如下几个文件，在打开终端时会依次加载：
 
 - [mac_MySQL安装](http://www.2cto.com/database/201409/332022.html)
 
+### 卸载
+首先可以在System Preferences中的Other里MySQL设置，停止其服务，然后参照以下手工删除命令行。
+
+```
+apple$ sudo rm /usr/local/mysql
+apple$ sudo rm -rf /usr/local/mysql*
+apple$ sudo rm -rf /Library/StartupItems/MySQLCOM
+apple$ sudo rm -rf /Library/PreferencePanes/My*
+apple$ sudo rm -rf /Library/Receipts/mysql*
+apple$ sudo rm -rf /Library/Receipts/MySQL*
+apple$ sudo rm -rf /var/db/receipts/com.mysql.*
+编辑/etc/hostconfig，删除其中的MYSQLCOM=-YES-这行
+```
+
+## Nginx
+
+### 安装：
+`brew install nginx` 安装nginx，其他nginx版本，可以`brew edit nginx`，修改nginx的安装信息包formula，默认会用 vi 打开，在文件开头处修改 nginx 相应版本的下载地址
+
+- `sudo nginx`
+  打开nginx
+- `nginx -s reload|reopen|stop|quit`
+  重新加载|重启|停止|退出 nginx
+- `vim /usr/local/etc/nginx/nginx.conf`
+  修改端口(nginx默认的访问端口为8080)
+- `/usr/local/Cellar/nginx/version/`
+  默认的文件访问目录，`version`为nginx的版本号
+- `mkdir -p ~/Library/LaunchAgents/`
+  `cp /usr/local/Cellar/nginx/1.4.2/homebrew.mxcl.nginx.plist ~/Library/LaunchAgents/`
+  `launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.nginx.plist`
+  设置nginx为开机启动
+- `sudo chown root:wheel /usr/local/Cellar/nginx/1.4.2/bin/nginx`
+  `sudo chmod u+s /usr/local/Cellar/nginx/1.4.2/bin/nginx`
+  给予nginx管理员权限(普通用户登陆时，nginx监听1024以下的端口无法开机自启)
+
+
 ## SFTP
 > 举例：
 > 远程主机IP：8.8.8.8 or www.8888.com
@@ -96,5 +132,7 @@ Home(~)下有如下几个文件，在打开终端时会依次加载：
 
 ### 更多
 `man sftp`
+
+`find . -type f | xargs dos2unix` 转换文件夹内所有文件换行符为Unix(LF)
 
 
