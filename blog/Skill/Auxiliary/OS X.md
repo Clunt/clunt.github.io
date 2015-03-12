@@ -46,9 +46,18 @@ Home(~)下有如下几个文件，在打开终端时会依次加载：
 
 - [编写 Bash 补全脚本](http://kodango.com/bash-competion-programming)
 
-## Mysql
 
-- [mac_MySQL安装](http://www.2cto.com/database/201409/332022.html)
+## Mysql
+### 安装
+`brew install mysql`
+
+*[Install MySQL For .dmg](http://www.2cto.com/database/201409/332022.html)*
+
+### 配置
+- `mkdir -p ~/Library/LaunchAgents/`
+  `cp /usr/local/Cellar/mysql/5.6.13/homebrew.mxcl.mysql.plist ~/Library/LaunchAgents/`
+  `launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist`
+  设置开机自启动
 
 ### 卸载
 首先可以在System Preferences中的Other里MySQL设置，停止其服务，然后参照以下手工删除命令行。
@@ -65,10 +74,10 @@ apple$ sudo rm -rf /var/db/receipts/com.mysql.*
 ```
 
 ## Nginx
-
-### 安装：
+### 安装
 `brew install nginx` 安装nginx，其他nginx版本，可以`brew edit nginx`，修改nginx的安装信息包formula，默认会用 vi 打开，在文件开头处修改 nginx 相应版本的下载地址
 
+### 配置
 - `sudo nginx`
   打开nginx
 - `nginx -s reload|reopen|stop|quit`
