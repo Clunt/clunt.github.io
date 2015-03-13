@@ -26,3 +26,7 @@
   `!/fw/bin/`
   `!/fw/sf/`
   忽略全部内容，但是不忽略`.gitignore`文件、`/fw/bin/`和`/fw/sf/`目录
+
+## 维护
+
+[如何清洗 Git Repo 代码仓库](http://www.open-open.com/lib/view/open1414632626075.html)
