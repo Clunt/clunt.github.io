@@ -10,6 +10,21 @@
 - [『HTML5实现人工智能』小游戏《井字棋》发布，据说IQ上200才能赢【算法&代码讲解+资源打包下载】 - Yorhom's Game Box - 博客频道 - CSDN.NET](http://blog.csdn.net/yorhomwang/article/details/8652567)
 - [关于如何提取游戏素材（配音、贴图、动画等_谢衣吧_百度贴吧](http://tieba.baidu.com/p/2550096198)
 - [Cocos2d-Html5--打怪升级之路 - CocoaChina 苹果开发中文站 - 最热的iPhone开发社区 最热的苹果开发社区 最热的iPad开发社区](http://www.cocoachina.com/industry/20130902/6912.html)
+- [DailyJS: A JavaScript Blog](http://dailyjs.com/)
+- [Pixi.js](http://www.pixijs.com/)
+- [即时战略游戏中实用的寻路算法都有哪些，比较如何](http://www.zhihu.com/question/20298134)
+- [[原创]JS中实现A*算法寻路](http://bbs.blueidea.com/thread-2664629-1-1.html)
+- [simple phaser & websocket guide - Phaser - HTML5 Game Devs Forum](http://www.html5gamedevs.com/topic/6256-simple-phaser-websocket-guide/)
+- [云风的 BLOG: COC Like 游戏中的寻路算法](http://blog.codingnow.com/2014/01/routemap.html)
+- [《游戏脚本的设计与开发》](http://blog.csdn.net/lufy_legend/article/details/8888787)
+- [html5游戏开发-零基础开发RPG游戏-开源讲座(一) - lufy小屋 - 博客频道 - CSDN.NET](http://blog.csdn.net/lufy_legend/article/details/7063316)
+- [使用Phaser和Eureca.io创建多用户在线游戏 | Phaser中文](http://phaser.cc/archives/528)
+- [TexturePacker - Create Sprite Sheets for your game!](https://www.codeandweb.com/texturepacker/)
+- [Phaser - Learn - Phaser Coding Tips 8: Sprite Motion Paths Tutorial](http://phaser.io/tutorials/coding-tips-008)
+- [Four Player Pong example with Socket.io - Phaser - HTML5 Game Devs Forum](http://www.html5gamedevs.com/topic/13472-four-player-pong-example-with-socketio/)
+- [Character and NPC Dialogue in PhaserJS](http://thebotanistgame.com/blog/2015/02/28/dialogue-in-phaserjs.html)
+- [Phaser中文微社区 - Phaser中文文档、实例教程、Demo分享](http://phaser.cc/bbs/)
+- [3D Tutorial — CoreS2 Software Solutions](http://www.cores2.com/3D_Tutorial/)
 
 ## 项目部署
 - [搭建nodejs环境推荐用两个工具：nvm和npm](http://blog.python100.net/archives/124)
@@ -30,7 +45,12 @@
 - [web三种跨域请求数据方法 - 其他 - 红黑联盟](http://www.2cto.com/kf/201301/182612.html)
 - [CodeLife / Ajax跨域访问](http://www.vinqon.com/codeblog/?detail/11103)
 - [[web前端]跨域通信与实验 | zcw的博客](http://zcw.me/blogwp/crossdomain/)
-
+- [Introduction to XMLHttpRequest Level 2](https://dev.opera.com/articles/xhr2/#xhrcredentials)
+- [XMLHttpRequest](https://dvcs.w3.org/hg/xhr/raw-file/tip/Overview.html)
+- [Same Origin Policy - Web Security](http://www.w3.org/Security/wiki/Same_Origin_Policy)
+- [Fetch Standard](https://fetch.spec.whatwg.org/)
+- [Dev.Opera — DOM Access Control Using Cross-Origin Resource Sharing](https://dev.opera.com/articles/view/dom-access-control-using-cross-origin-resource-sharing/)
+- [AJAX - Introducing Cross-domain Request (XDR) (Internet Explorer)](https://msdn.microsoft.com/en-us/library/dd573303(v=vs.85).aspx)
 
 ## 资源
 - [秋玉米](http://www.qiuyumi.org/)
@@ -45,6 +65,11 @@
 - ajax 返回html 对其操作
 - nodejs mode层封装
 - 个人博客图片存七牛
+- [浅析 JavaScript 中的 函数 currying 柯里化](http://www.2cto.com/kf/201412/357997.html?from=singlemessage&isappinstalled=1)
+- [正则表达式30分钟入门教程](http://www.jb51.net/tools/zhengze.html)
+- [“文字”聚合、散出动画](http://www.75team.com/archives/944)
+- [使用node-inspector调试Node.js应用](https://cnodejs.org/topic/4f77c41f8a04d82a3d5dfcb9)
+- [Transpiler-To-Javascript](http://luvv.ie/2014/01/21/your-transpiler-to-javascript-toolbox/)
 - [浏览器 http 200(from cache) 和 304](http://blog.csdn.net/joeyon1985/article/details/38729235)
 - [前后端分离的思考与实践](http://ued.taobao.org/blog/2014/04/full-stack-development-with-nodejs/)
 - [60FPS On The Mobile Web](http://engineering.flipboard.com/2015/02/mobile-web/)
@@ -139,3 +164,15 @@
 - [Keymetrics](https://app.keymetrics.io/#/)
 - [Easy Zoom - easy image zoom](http://cssglobe.com/lab/easyzoom/easyzoom.html)
 - [Leroy Zoom Demo](http://edison.github.io/leroy-zoom/)
+- [常用meta整理](http://segmentfault.com/a/1190000002407912)
+- [Ctrip webkit CSS library](http://ued.ctrip.com/blog/wp-content/webkitcss/index.html)
+- [2015：巨型 JavaScript 框架的末日](http://web.jobbole.com/82388/)
+- [sotayamashita/awesome-css](https://github.com/sotayamashita/awesome-css)
+- [常见算法是js实现汇总 - super-d2 - 博客园](http://www.cnblogs.com/super-d2/archive/2011/10/16/2212865.html)
+- [Chrome 中的 JavaScript 断点设置和调试技巧 - hanguokai/Jackie的日志 - 网易博客](http://han.guokai.blog.163.com/blog/static/136718271201321402514114/)
+- [搜索 Chrome开发者工具不完全指南 - WEB前端 - 伯乐在线](http://web.jobbole.com/?s=Chrome%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7%E4%B8%8D%E5%AE%8C%E5%85%A8%E6%8C%87%E5%8D%97)
+- [如何理解块级格式化上下文BFC(block formatting context)? - 前端开发 - 知乎](http://www.zhihu.com/question/28433480)
+- [js 调用栈_百度搜索](https://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&tn=baidu&wd=js%20%E8%B0%83%E7%94%A8%E6%A0%88&rsv_pq=c3cb664800018609&rsv_t=3266fCV4hdtiRHjIXvBe5mNHjhFQiSLqFbXaE1iyqOBV5brOeenIXny31As&rsv_enter=1&rsv_sug3=4&rsv_sug2=0&inputT=1221&rsv_sug4=1222)
+- [前端自动化测试探索 - FEX](http://fex.baidu.com/blog/2015/07/front-end-test/)
+- [Flex 布局语法教程 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
+- [如何进行前端自动化测试？ - 知乎](http://www.zhihu.com/question/29922082)
