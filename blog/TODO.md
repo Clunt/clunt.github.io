@@ -179,6 +179,16 @@
 - [中文字体 webfont 自动化构建](http://efe.baidu.com/blog/chinese-font-build/)
 - [CSS深入理解流体特性和BFC特性下多栏自适应布局](http://www.zhangxinxu.com/wordpress/2015/02/css-deep-understand-flow-bfc-column-two-auto-layout/)
 - [现代浏览器的工作原理](http://blog.jobbole.com/12749/)
-
-
+- [浏览器缓存详解:expires,cache-control,last-modified,etag详细说明](http://blog.csdn.net/eroswang/article/details/8302191)
+- [Understanding the Git Workflow](https://sandofsky.com/blog/git-workflow.html)
 - [醉饱高眠真年味，100元红酒购买指南_生活方式_澎湃新闻-The Paper](http://m.thepaper.cn/newsDetail_forward_1303232)
+- [Mutt 使用指南](http://www.ctex.org/documents/shredder/mutt_frame.html)
+- [前端工程——基础篇](https://github.com/fouber/blog/issues/10)
+- [为什么人人都该懂点LLVM - 博客 - 伯乐在线](http://blog.jobbole.com/90046/)
+- [一个比较好的mutt文章及配置文件-yangbosos-ChinaUnix博客](http://blog.chinaunix.net/uid-8504518-id-2030715.html)
+- [前端性能优化极经典](http://velocity.oreilly.com.cn/2010/ppts/VelocityChina2010Dec7StaticResource.pdf)
+- [评香师说，这大概是你看到过最专业又好读的香水入门](http://daily.zhihu.com/story/7072147?utm_campaign=in_app_share&utm_medium=iOS&utm_source=copy)
+- [知识解答：基础知识学起来！为设计师量身打造的DPI指南（下）](http://daily.zhihu.com/story/7077710?utm_campaign=in_app_share&utm_medium=iOS&utm_source=copy)
+- [深入浅出 React Native](http://zhuanlan.zhihu.com/FrontendMagazine/19996445)
+- [O'Reilly Velocity China 2010, Web 性能和运维大会](http://velocity.oreilly.com.cn/2010/index.php?func=session&name=%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5%E8%B5%84%E6%BA%90%E7%9A%84%E7%AE%A1%E7%90%86%E5%92%8C%E4%BC%98%E5%8C%96)
+- [How browsers work](http://taligarsiel.com/Projects/howbrowserswork1.htm)
