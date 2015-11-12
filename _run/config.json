@@ -1,6 +1,8 @@
 {
+  "path": "/Users/clunt/Doc/clunt.github.io",
+  "source": "blog",
   "ignore": {
-    "directory": ["_run", "node_modules", ".git", ".*TODO.md$"],
-    "files": [".DS_Store", ".gitignore", ".gitempty", "README.md", ".*(png|jpg)"]
+    "directory": ["_run", "node_modules", ".git"],
+    "files": [".DS_Store", ".gitignore", ".gitempty", "README.md", "content.md", ".*(png|jpg)", ".*TODO.md$"]
   }
 }

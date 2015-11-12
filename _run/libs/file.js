@@ -24,9 +24,10 @@ exports.list = function list(path, ignore) {
     var file_stat = fs.statSync(file_path);
     var isDirectory = file_stat.isDirectory();
     if (isIgnore(file, isDirectory, file_path)) return;
+    console.log(file);
     if (isDirectory) {
       arr = arr.concat(list(file_path, ignore));
-    } else {
+    } else if (/.*.md$/.test(file)) {
       arr.push({
         name: file,
         path: file_path,
@@ -45,7 +46,7 @@ exports.list = function list(path, ignore) {
 exports.tree = function tree(fileList) {
   fileList = fileList || [];
   var result = {__list: []};
-  function setTree(root, arr, index) {
+  function setTree(root, arr, index, file) {
     index = index || 0;
     var name = arr[index];
     var length = arr.length;
@@ -53,12 +54,12 @@ exports.tree = function tree(fileList) {
       return console.warn('\33[32m出错了，文件夹/名不支持"__list"\33[0m');
     }
     if (index === length - 1) {
-      root.__list.push(name);
+      root.__list.push(file);
     } else if (index < length - 1) {
       if (typeof root[arr[index]] === 'undefined') {
         root[arr[index]] = {__list: []};
       }
-      setTree(root[arr[index]], arr, ++index);
+      setTree(root[arr[index]], arr, ++index, file);
     }
   }
   fileList.forEach(function(file, index, files) {
@@ -67,7 +68,7 @@ exports.tree = function tree(fileList) {
       path = path.slice(1);
     }
     var path_arr = path.split('/');
-    setTree(result, path_arr, 0);
+    setTree(result, path_arr, 0, file);
   });
   return result;
 };
@@ -82,15 +83,6 @@ exports.deal = function deal(fileList, root) {
     file._directory = file.directory;
     file.path = file.path.replace(rootReg, '');
     file.directory = file.directory.replace(rootReg, '');
-    file.link = (function(path) {
-      path = path.replace(rootReg, '') || '';
-      var linkArr = path.split('/');
-      for (var i = 0; i < linkArr.length; i++) {
-        linkArr[i] = encodeURIComponent(linkArr[i]);
-      }
-      path = linkArr.join('/');
-      return path;
-    }(file.path));
   });
   return fileList;
 };
