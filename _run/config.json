@@ -1,2 +1,6 @@
 {
+  "ignore": {
+    "directory": ["_run", "node_modules", ".git", ".*TODO.md$"],
+    "files": [".DS_Store", ".gitignore", ".gitempty", "README.md", ".*(png|jpg)"]
+  }
 }

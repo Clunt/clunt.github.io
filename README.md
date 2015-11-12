@@ -1,4 +1,1 @@
-Clunt
-===============
-
-## Clunt Blog
+# Clunt Blog
