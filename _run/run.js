@@ -3,6 +3,7 @@ var Config = require('./config')
 var Util = require('./libs/util');
 var File = require('./libs/file');
 var Markdown = require('./libs/markdown');
+var Home = require('./libs/home');
 
 
 global.config = {
@@ -35,6 +36,10 @@ try {
   var readme = fs.readFileSync('_run/README.md', 'utf8');
 } catch(e) {}
 
+try {
+  var index = fs.readFileSync('_run/index.html', 'utf8');
+} catch(e) {}
+
 Markdown.readme(fileRecent, {readme: readme}, function(err, readme) {
   if (err) throw err;
   fs.writeFile('README.md', readme, function (err) {
@@ -48,5 +53,13 @@ Markdown.detail(fileTree, function(err, detail) {
   fs.writeFile('content.md', detail, function (err) {
     if (err) throw err;
     console.log('\33[32m[Saved]\33[0m content.md');
+  });
+});
+
+Home.index(fileRecent, {index: index}, function(err, index) {
+  if (err) throw err;
+  fs.writeFile('index.html', index, function (err) {
+    if (err) throw err;
+    console.log('\33[32m[Saved]\33[0m index.html');
   });
 });
