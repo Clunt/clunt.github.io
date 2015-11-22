@@ -5,7 +5,7 @@
 - [ionic环境配置 - 前端开发-周文彬](http://www.zhouwenbin.com/ionic%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/)
 
 ## JS游戏
-- [Pomelo home](http://pomelo.netease.com/)
+- [CSS modules](http://glenmaddern.com/articles/css-modules)
 - [HTML5游戏开发者社区-](http://www.html5gamedev.org/)
 - [『HTML5实现人工智能』小游戏《井字棋》发布，据说IQ上200才能赢【算法&代码讲解+资源打包下载】 - Yorhom's Game Box - 博客频道 - CSDN.NET](http://blog.csdn.net/yorhomwang/article/details/8652567)
 - [关于如何提取游戏素材（配音、贴图、动画等_谢衣吧_百度贴吧](http://tieba.baidu.com/p/2550096198)
@@ -283,3 +283,5 @@
 - [MySQL安全配置详解](http://www.ha97.com/4092.html)
 - [如何做到linux系统安全-WuYaalan-ChinaUnix博客](http://blog.chinaunix.net/uid-26126915-id-3753060.html)
 - [数据库迁移更新django south 使用教程(1) - BeginMan - 博客园](http://www.cnblogs.com/BeginMan/archive/2013/09/16/3324774.html)
+- [再谈mobile web retina 下 1px 边框解决方案 | Hugo Web前端开发](http://www.ghugo.com/css-retina-hairline/)
+- [字符编码笔记：ASCII，Unicode和UTF-8 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2007/10/ascii_unicode_and_utf-8.html)
