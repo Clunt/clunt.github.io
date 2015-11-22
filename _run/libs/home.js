@@ -4,7 +4,7 @@ function genRecent(list) {
   list = list || [];
   var recent = '';
   list.forEach(function(item) {
-    recent += '<li><a href="' + Util.link(item._path, config.path) + '">' + Util.name(item.name) + '-' + Util.dateFormat(item.mtime, 'yyyy-MM-dd') + '</a></li>';
+    recent += '<li><a href="https://github.com/Clunt/clunt.github.io/blob/master' + Util.link(item._path, config.path) + '">' + Util.name(item.name) + '-' + Util.dateFormat(item.mtime, 'yyyy-MM-dd') + '</a></li>';
   });
   return recent;
 }
