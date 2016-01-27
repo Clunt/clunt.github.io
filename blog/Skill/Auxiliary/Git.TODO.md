@@ -30,3 +30,9 @@
 ## 维护
 
 [如何清洗 Git Repo 代码仓库](http://www.open-open.com/lib/view/open1414632626075.html)
+## 克隆
+`git clone`
+
+`git clone ssh://git@[URI]:[PORT]/[PATH].git`
+
+## 搭建私有仓库
