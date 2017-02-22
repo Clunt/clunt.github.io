@@ -1,69 +1,12 @@
 # TODO
 
-## 富应用框架
-- [使用 AngularJS 从零构建大型应用 » 社区 » Ruby China](https://ruby-china.org/topics/24111)
-- [ionic环境配置 - 前端开发-周文彬](http://www.zhouwenbin.com/ionic%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/)
 
 ## JS游戏
 - [CSS modules](http://glenmaddern.com/articles/css-modules)
-- [HTML5游戏开发者社区-](http://www.html5gamedev.org/)
-- [『HTML5实现人工智能』小游戏《井字棋》发布，据说IQ上200才能赢【算法&代码讲解+资源打包下载】 - Yorhom's Game Box - 博客频道 - CSDN.NET](http://blog.csdn.net/yorhomwang/article/details/8652567)
-- [关于如何提取游戏素材（配音、贴图、动画等_谢衣吧_百度贴吧](http://tieba.baidu.com/p/2550096198)
-- [Cocos2d-Html5--打怪升级之路 - CocoaChina 苹果开发中文站 - 最热的iPhone开发社区 最热的苹果开发社区 最热的iPad开发社区](http://www.cocoachina.com/industry/20130902/6912.html)
-- [DailyJS: A JavaScript Blog](http://dailyjs.com/)
-- [Pixi.js](http://www.pixijs.com/)
-- [即时战略游戏中实用的寻路算法都有哪些，比较如何](http://www.zhihu.com/question/20298134)
-- [[原创]JS中实现A*算法寻路](http://bbs.blueidea.com/thread-2664629-1-1.html)
-- [simple phaser & websocket guide - Phaser - HTML5 Game Devs Forum](http://www.html5gamedevs.com/topic/6256-simple-phaser-websocket-guide/)
-- [云风的 BLOG: COC Like 游戏中的寻路算法](http://blog.codingnow.com/2014/01/routemap.html)
-- [《游戏脚本的设计与开发》](http://blog.csdn.net/lufy_legend/article/details/8888787)
-- [html5游戏开发-零基础开发RPG游戏-开源讲座(一) - lufy小屋 - 博客频道 - CSDN.NET](http://blog.csdn.net/lufy_legend/article/details/7063316)
-- [使用Phaser和Eureca.io创建多用户在线游戏 | Phaser中文](http://phaser.cc/archives/528)
-- [TexturePacker - Create Sprite Sheets for your game!](https://www.codeandweb.com/texturepacker/)
-- [Phaser - Learn - Phaser Coding Tips 8: Sprite Motion Paths Tutorial](http://phaser.io/tutorials/coding-tips-008)
-- [Four Player Pong example with Socket.io - Phaser - HTML5 Game Devs Forum](http://www.html5gamedevs.com/topic/13472-four-player-pong-example-with-socketio/)
-- [Character and NPC Dialogue in PhaserJS](http://thebotanistgame.com/blog/2015/02/28/dialogue-in-phaserjs.html)
-- [Phaser中文微社区 - Phaser中文文档、实例教程、Demo分享](http://phaser.cc/bbs/)
-- [3D Tutorial — CoreS2 Software Solutions](http://www.cores2.com/3D_Tutorial/)
-
-## 项目部署
-
-## Closure
-- [javascript深入理解js闭包_javascript技巧_脚本之家](http://www.jb51.net/article/24101.htm)
-- [举例详细说明javascript作用域、闭包原理以及性能问题 - 像阳光一样 - 博客园](http://www.cnblogs.com/mrsunny/archive/2011/11/03/2233978.html)
-- [IE JS闭包导致的内存泄露_backup_百度空间](http://hi.baidu.com/sodarfish/item/e10fbe0fb98da624a1312d22)
-
-## this
-- [JavaScript 秘密花园](http://bonsaiden.github.io/JavaScript-Garden/zh/#function.this)
-- [JavaScript中的call(this)_h-won之队](http://i.h-won.com/post/2013-08-29/40052244462)
-- [我对原型对象中this的一个懵懂错误认识 « 张鑫旭-鑫空间-鑫生活](http://www.zhangxinxu.com/wordpress/2013/01/understand-this-of-object-literals/)
-
-## 跨域
-- [﻿﻿JavaScript跨域总结与解决办法 - 计算机应用 - 博客频道 - CSDN.NET](http://blog.csdn.net/21aspnet/article/details/7412460)
-- [JavaScript 跨域访问的问题和解决过程 - 听说读写 - 博客园](http://www.cnblogs.com/PurpleTide/archive/2011/11/06/2238293.html)
-- [web三种跨域请求数据方法 - 其他 - 红黑联盟](http://www.2cto.com/kf/201301/182612.html)
-- [CodeLife / Ajax跨域访问](http://www.vinqon.com/codeblog/?detail/11103)
-- [[web前端]跨域通信与实验 | zcw的博客](http://zcw.me/blogwp/crossdomain/)
-- [Introduction to XMLHttpRequest Level 2](https://dev.opera.com/articles/xhr2/#xhrcredentials)
-- [XMLHttpRequest](https://dvcs.w3.org/hg/xhr/raw-file/tip/Overview.html)
-- [Same Origin Policy - Web Security](http://www.w3.org/Security/wiki/Same_Origin_Policy)
-- [Fetch Standard](https://fetch.spec.whatwg.org/)
-- [Dev.Opera — DOM Access Control Using Cross-Origin Resource Sharing](https://dev.opera.com/articles/view/dom-access-control-using-cross-origin-resource-sharing/)
-- [AJAX - Introducing Cross-domain Request (XDR) (Internet Explorer)](https://msdn.microsoft.com/en-us/library/dd573303(v=vs.85).aspx)
 
 ## 资源
-- [秋玉米](http://www.qiuyumi.org/)
-- [有好米](http://www.uhaomi.com/)
-- [百度CDN](http://developer.baidu.com/wiki/index.php?title=docs/cplat/libs)
-- [新浪CDN](http://lib.sinaapp.com/)
-- [又拍CDN](http://jscdn.upai.com/)
-- [七牛CDN](http://staticfile.org/)
-- [360CDN](http://libs.useso.com/)
 
 ## Other
-- ajax 返回html 对其操作
-- nodejs mode层封装
-- 个人博客图片存七牛
 - [浅析 JavaScript 中的 函数 currying 柯里化](http://www.2cto.com/kf/201412/357997.html?from=singlemessage&isappinstalled=1)
 - [正则表达式30分钟入门教程](http://www.jb51.net/tools/zhengze.html)
 - [“文字”聚合、散出动画](http://www.75team.com/archives/944)
@@ -266,7 +209,6 @@
 - [了不起的IE7浏览器-CSS新特性-实现与思维变革 « 张鑫旭-鑫空间-鑫生活](http://www.zhangxinxu.com/wordpress/2015/07/ie7-css-js-improvement-change/)
 - [IE7浏览器下CSS属性选择器二三事 « 张鑫旭-鑫空间-鑫生活](http://www.zhangxinxu.com/wordpress/2015/06/ie7-attribute-css-selector/)
 - [scrollLeft,scrollTop,滚动代码的总结 - 小顾问 - 博客园](http://www.cnblogs.com/panjun-Donet/archive/2008/09/19/1294310.html)
-- [Git 使用规范流程 - Div.IO](http://div.io/topic/1423)
 - [3D Touch在web端的应用 - Div.IO](http://div.io/topic/1410)
 - [iOS9 带来的initial-scale的变化 - Div.IO](http://div.io/topic/1409)
 - [CSS3新单位：calc()未来自适应布局利器！ - Div.IO](http://div.io/topic/1402)
@@ -297,3 +239,25 @@
 - [阿里云存储如何让浏览器始终以200 (from cache)缓存图片？ - 知乎](http://www.zhihu.com/question/28725359)
 - [测试框架 Mocha 实例教程 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2015/12/a-mocha-tutorial-of-examples.html)
 - [图解SQL的各种连接join -- 简明现代魔法](http://www.nowamagic.net/librarys/veda/detail/936)
+- [用window.onerror捕获并上报Js错误_Alien的笔记](http://www.baidufe.com/item/7ee009bfbcd0fe94bd3e.html)
+- [XSS 前端防火墙 —— 可疑模块拦截 - FEX](http://fex.baidu.com/blog/2014/06/xss-frontend-firewall-2/)
+- [I Read All the W3C Specs](http://sandersk.github.io/reading-w3c/#/9)
+- [Brief history of programming languages](http://foorious.com/articles/brief-history-of-programming-languages/)
+- [2016 - 属于网络流（web streams）的一年 - w3ctech - 中国最大的前端技术社区](http://www.w3ctech.com/topic/1693)
+- [字符编码笔记：ASCII，Unicode和UTF-8 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2007/10/ascii_unicode_and_utf-8.html)
+- [Unicode与JavaScript详解 - 阮一峰的网络日志](http://www.ruanyifeng.com/blog/2014/12/unicode.html)
+- [MYSQL性能查看（命中率,慢查询) - IQuicksandI的专栏 - 博客频道 - CSDN.NET](http://blog.csdn.net/iquicksandi/article/details/7970706)
+- [如何评价一个伪随机数生成算法的优劣？ - 知乎](https://www.zhihu.com/question/20222653)
+- [国内Nodejs 2015汇总 - CNode技术社区](https://cnodejs.org/topic/5696e43e6272216e51bff67e)
+- [消息系统设计与实现「上篇」 - CNode技术社区](https://cnodejs.org/topic/561e789e30e69d1b2ad8b27f)
+- [消息系统设计与实现「下篇」 - CNode技术社区](https://cnodejs.org/topic/56485dd8b68278b07f982804)
+- [Mixins Are Dead. Long Live Composition — Medium](https://medium.com/@dan_abramov/mixins-are-dead-long-live-higher-order-components-94a0d2f9e750#.h191595mc)
+- [再谈mobile web retina 下 1px 边框解决方案 - 推酷](http://www.tuicool.com/articles/ZRv6bun)
+- [如何建立npm私库 - 推酷](http://www.tuicool.com/articles/EnqYfm)
+- [[新闻][JavaScript引擎] WebKit JavaScriptCore用新的B3编译器后端替代FTL JIT中的LLVM - 编程语言与高级语言虚拟机杂谈（仮） - 知乎专栏](http://zhuanlan.zhihu.com/hllvm/20577490)
+- [Scott Frees - Getting your C++ to the Web with Node.js](http://blog.scottfrees.com/getting-your-c-to-the-web-with-node-js?utm_source=nodeweekly&utm_medium=email)
+- [虚拟机随谈（一）：解释器，树遍历解释器，基于栈与基于寄存器，大杂烩 - Script Ahead, Code Behind - ITeye技术网站](http://rednaxelafx.iteye.com/blog/492667)
+- [架构细节 | 看看 Medium 的开发团队用了哪些技术？](http://mp.weixin.qq.com/s?__biz=MzA5Nzc4OTA1Mw==&mid=408154901&idx=1&sn=c17573f6fbb2c035db6300ddfc5e9df7#rd)
+- [房间和迷宫：一个地牢生成算法 | indienova](http://indienova.com/indie-game-development/rooms-and-mazes-a-procedural-dungeon-generator/)
+- [Object instanceof Function 还是 Function instance of Object，是真是假，一一道来 - eliuhy - 博客园](http://m.baidu.com/from=1099b/bd_page_type=1/ssid=0/uid=0/pu=usm%400%2Csz%401321_2004%2Cta%40utouch_1_9.2_19_/baiduid=B4E0170284B51AEE47E20A8F27ADAE63/w=0_10_function+instanceof+object/t=wap/l=3/tc?ref=www_utouch&lid=8484852257521126479&order=1&vit=osres&tj=www_normal_1_0_10_title&m=8&dict=20&title=ObjectinstanceofFunction%E8%BF%98%E6%98%AFFunctioni..._%E5%8D%9A%E5%AE%A2%E5%9B%AD&sec=9624&di=b0b60ce4e5e01469&bdenc=1&nsrc=IlPT2AEptyoA_yixCFOxXnANedT62v3IEQGG_ytK1DK6mlrte4viZQRAXTH-NXiCHFP-gTCcg2tSaC8hOnEobxB0r_x6sVsf7mjb9f8tdhPsMcZHqdAkNdfAWzYdzuv6ibRQsAoiAQ6eK8YspeP7fwsnaRKYwAxz5xPJrC7)
+- [Git Submodule使用完全教程](http://www.360doc.com/content/13/0110/10/7991404_259310693.shtml)

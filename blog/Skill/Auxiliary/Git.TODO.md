@@ -3,6 +3,8 @@
 - [廖雪峰](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013743858312764dca7ad6d0754f76aa562e3789478044000)
 - [Pro Git](http://git.oschina.net/progit/)
 - [Git教程](http://www.cnblogs.com/zhangjing230/archive/2012/05/09/2489745.html)
+- [Git 使用规范流程 - Div.IO](http://div.io/topic/1423)
+- [个性化你的Git Log的输出格式](https://ruby-china.org/topics/939)
 
 ## .gitignore
 > `.gitignore`是git项目文件的过滤机制，分为全局过滤和单一过滤。
