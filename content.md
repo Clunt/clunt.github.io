@@ -5,4 +5,6 @@
     - Skill
         - Auxiliary
             - [Emmet](/blog/Skill/Auxiliary/Emmet.md)
+        - Javascript
+            - [多行文本溢出显示省略号的JS实现](/blog/Skill/Javascript/%E5%A4%9A%E8%A1%8C%E6%96%87%E6%9C%AC%E6%BA%A2%E5%87%BA%E6%98%BE%E7%A4%BA%E7%9C%81%E7%95%A5%E5%8F%B7%E7%9A%84JS%E5%AE%9E%E7%8E%B0.md)
         - [技术栈](/blog/Skill/%E6%8A%80%E6%9C%AF%E6%A0%88.md)
