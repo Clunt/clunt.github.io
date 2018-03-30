@@ -1,3 +1,4 @@
+var path = require('path');
 var fs = require('fs');
 var Config = require('./config')
 var Util = require('./libs/util');
@@ -5,9 +6,10 @@ var File = require('./libs/file');
 var Markdown = require('./libs/markdown');
 var Home = require('./libs/home');
 
+var doc_dir = path.resolve(__dirname, '../');
 
 global.config = {
-  path: Config.path,
+  path: doc_dir,
   source: Config.source || 'blog',
   ignore: {
     directory: Config.ignore.directory || [],

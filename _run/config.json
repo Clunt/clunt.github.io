@@ -1,5 +1,4 @@
 {
-  "path": "/Users/clunt/Doc/clunt.github.io",
   "source": "blog",
   "ignore": {
     "directory": ["_run", "node_modules", ".git"],
