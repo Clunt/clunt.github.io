@@ -35,11 +35,11 @@ var fileRecent = Util.recent(fileList, 10);
 
 
 try {
-  var readme = fs.readFileSync('_run/README.md', 'utf8');
+  var readme = fs.readFileSync('build/README.md', 'utf8');
 } catch(e) {}
 
 try {
-  var index = fs.readFileSync('_run/index.html', 'utf8');
+  var index = fs.readFileSync('build/index.html', 'utf8');
 } catch(e) {}
 
 Markdown.readme(fileRecent, {readme: readme}, function(err, readme) {

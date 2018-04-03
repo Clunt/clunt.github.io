@@ -1,0 +1,19 @@
+{
+  "name": "clunt.github.io",
+  "version": "1.0.0",
+  "description": "本博客根据文件(*.md)目录位置生成文章连接",
+  "main": "index.js",
+  "scripts": {
+    "build": "./build/run.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Clunt/clunt.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Clunt/clunt.github.io/issues"
+  },
+  "homepage": "https://github.com/Clunt/clunt.github.io#readme"
+}

@@ -1,5 +1,5 @@
 {
-  "name": "_run",
+  "name": "build",
   "version": "1.0.0",
   "description": "",
   "main": "run.js",
