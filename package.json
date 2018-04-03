@@ -4,7 +4,7 @@
   "description": "本博客根据文件(*.md)目录位置生成文章连接",
   "main": "index.js",
   "scripts": {
-    "build": "./build/run.js"
+    "build": "node ./build/run.js"
   },
   "repository": {
     "type": "git",
