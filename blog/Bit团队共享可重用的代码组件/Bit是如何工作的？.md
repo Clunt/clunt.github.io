@@ -1,4 +1,4 @@
-# Bit如何工作？（How bit Works?）
+# Bit是如何工作的？（How bit Works?）
 组件是现代Web体系结构的基础。 具有重点明确定义的API的封装和可重用组件使开发人员可以更快地构建更强大的软件应用程序。
 > Components are the building blocks of modern web architectures. Encapsulated and reusable components with focused and well-defined APIs let developers build more robust software applications more quickly.
 
