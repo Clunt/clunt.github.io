@@ -8,7 +8,7 @@ Bit使您可以在不同项目和应用程序之间共享和同步组件。
 在本教程中，我们将在两个项目之间共享一个Vue组件。
 > In this tutorial, we'll share a Vue component between two projects.
 
-### 先验知识（Prior Knowledge0
+### 先验知识（Prior Knowledge）
 本教程假定您熟悉：（This tutorial assumes that you are familiar with:）
 
 - 终端和命令行。（Terminal and command line.）
