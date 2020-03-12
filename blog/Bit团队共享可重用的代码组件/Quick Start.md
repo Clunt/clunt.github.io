@@ -1,0 +1,275 @@
+# Quick Start
+Bit是在原子组件上进行协作的平台
+> Bit is the platform for collaboration on atomic components
+
+![](https://storage.googleapis.com/static.bit.dev/docs/images/quick-start.svg)
+
+Bit是一个开放源码的cli工具，用于跨项目和存储库的隔离组件进行协作。
+> Bit is an open-source cli tool for collaborating on isolated components across projects and repositories.
+
+使用Bit将离散的组件从设计库或项目分发到独立的可重用包中，并在应用程序中使用它。
+> Use Bit to distribute discrete components from a design library or a project into a standalone reusable package and utilize it across applications.
+
+你可以设置自己的服务器来进行组件协作，也可以使用bit.dev云托管进行私有和公共组件共享。
+> You can set up your own server for components collaboration, or use the bit.dev cloud hosting for private and public components sharing.
+
+Bit简化了UI组件上的协作过程。 团队成员可以共享，维护和同步来自不同项目的隔离组件。
+> Bit facilitates the process of collaborating on UI components. Team members can share, maintain, and synchronize isolated components from different projects.
+
+**Bit对团队的价值（Bit allows teams to）：**
+
+- 提高代码可重用性（Increase code reusability）
+- 提高设计和开发效率（Increase design and development efficiency）
+- 保持UI和UX的一致性（Retain UI and UX consistency）
+- 增加项目的稳定性（Increase project's stability）
+
+
+**核心能力（Key Features）:**
+
+- 从现有的库或项目中提取要直接共享的组件。（Extract a component for sharing directly from an existing library or project.）
+- 通过与项目的其余部分分开构建和测试每个组件，验证组件的独立性。（Validate the component's independence by building and ）testing each component separately from the rest of the project.
+- 从任何使用共享组件的应用程序中更改其源代码。（Change the source code of shared components from any ）application that utilizes it.
+- 在本地修改的基础上获取组件中已发布的更改。（Get published changes in components on top of local ）modifications.
+- 直接从使用应用程序中回馈对组件所做的更改。（Contribute back changes made to components directly ）from the consuming applications.
+- 自动将每个组件包装为npm软件包。（Automatically wrap each component as an npm package.）
+- 分发离散组件，而不是单个大型软件包。（Distribute discrete components instead of a single ）massive package.
+- 根据组件依赖性的变化自动进行组件版本控制。（Automate component versioning according to changes in ）its dependencies.
+- 与领先的框架和工具一起使用：React，Vue，Angular，Mocha，Jest。（Use with leading frameworks and tools: React, Vue, ）Angular, Mocha, Jest.
+- 与Git，NPM和Yarn一起使用。（Works alongside Git, NPM, and Yarn.）
+
+
+Bit可兼容的Javascript和Javascript框架：
+> Bit is working with Javascript and Javascript frameworks:
+
+![](https://storage.googleapis.com/static.bit.dev/docs/images/js_logos.png)
+
+
+## 设置（Setup）
+### 安装Bit（Install Bit）
+```shell
+# Node >= 8.12 use npm or yarn
+npm install bit-bin -g
+# Node < 8.12
+# https://docs.bit.dev/docs/installation
+```
+
+### 初始化Bit工作区(Initialize Bit workspace)
+```shell
+# 要共享项目中的组件，应在该项目中初始化Bit：
+bit init
+```
+![](https://storage.googleapis.com/static.bit.dev/docs/gifs/bit-init.gif)
+
+Bit组件应该很小，并且只能保存组件的相关文件。 但是，通常是从你正在使用的框架（例如React或Vue）中导入组件，或者它们包含特定于项目的依赖项（例如Storybook）。 为了确保在Bit组件中排除那些依赖关系，我们需要将它们配置为peerDependencies。
+> Bit components should be small and only hold the component's relevant files. However, it is common that the components are importing from the framework you are using, such as React or Vue, or that they contain project-specific dependencies such as Storybook. To make sure you exclude those dependencies inside the Bit component, we need to configure them as peerDependencies.
+
+<!--  -->
+> 以下示例适用于React，但你应将类似的方法应用于任何其他框架或其他工具和库。 请查看针对你框架的特定准则，以获取更多信息
+>> The example below is for React, but you should apply a similar approach to any other framework or additional tools and libraries. Check out the specific guidelines for your framework for more information.
+
+
+为此，你需要配置你的Bit工作区。 在package.json文件中，添加与此类似的部分：
+> To achieve this, you need to configure your bit workspace. In your package.json file add a similar section to this one:
+
+```json
+"peerDependencies": {
+  "react": ">=16.9.0",
+  "react-dom": ">=16.9.0",
+  "styles-components": ">=4.0.0",
+  "@storybook/react": ">=5.2.0"
+}
+```
+
+
+## Track
+要开始跟踪Bit中的组件，请使用add命令。 组件具有其文件后，Bit可以识别并验证该组件的所有依赖项是否存在，并跟踪所有文件。 Bit还可以将组件与实用程序（例如编译器或测试器）相关联，并开始隔离地构建和测试组件。
+> To start tracking components in Bit, use the add command. Once the component has its files, Bit can identify and verify that all the dependencies of the component exist, and all files are tracked. Bit can also associate the component with utilities--such as a compiler or a tester--and start building and testing the component in isolation.
+
+### 添加文件（Add Files）
+开始跟踪项目中的组件。 明确定义和隔离的组件是很好的跟踪对象。
+> Start tracking components in the project. A good candidate for tracking is a component that is clearly defined and isolated.
+
+使用`bit add`命令跟踪组件：
+> Use the bit add command to track a component:
+
+```shell
+bit add src/components/my-component.ts --id my-component
+```
+
+你可以一次跟踪多个组件：
+> You can track multiple components at once:
+
+```shell
+bit add src/components/*
+```
+
+这将跟踪`src/components`目录中的所有组件。 每个组件将位于以其组件ID命名的目录中。
+> This will track all the components in the src/components directory. Each component will be in a directory named after its component id.
+
+您还可以通过附加`--tests`标志来将测试文件作为组件的一部分进行跟踪。 Bit可以隔离运行这些测试并显示结果。
+> You can also track test files as part of your components by appending the --tests flag. Bit can run these tests in isolation and display the results.
+
+使用`bit status`来验证是否跟踪了该组件，并且没有文件丢失。
+> Use bit status to verify that the component was tracked, and no files are missing.
+
+### 添加编译器（Add compiler）
+在另一个项目中有两种使用Bit组件的方法：
+> There are two ways to use Bit components in another project:
+
+导入源代码并将其嵌入到使用项目中。
+> Import the source code and embed it into the consuming project.
+
+安装项目将其作为NPM软件包使用的构建工件（例如dist目录）。
+> Install built artifacts (e.g., dist directory) that are consumed by the project as an NPM package.
+
+要构建组件并创建构建工件，您需要为您从项目中共享的组件定义一个编译器。 编译器本身也是一个组件，因此我们使用`bit import`命令将其导入到我们的项目中：
+> To build the component and create build artifacts, you need to define a compiler for the components you share from your project. A compiler is also a component itself, so we use the bit import command to import it into our project:
+
+```shell
+$ bit import bit.envs/compilers/babel --compiler
+the following component environments were installed
+- bit.envs/compilers/babel@0.0.7
+```
+
+
+### 添加测试（Add Tester）
+如果您跟踪组件的测试文件，则可以定义Bit将用来运行它们的测试框架。像编译器一样，bit tester是作为组件提供的工具：
+> If you track test files for your components, you can define a testing framework Bit will use to run them. A bit tester, like a compiler, is a tool provided as a component:
+
+```shell
+$ bit import bit.envs/testers/mocha --tester
+the following component environments were installed
+- bit.envs/testers/mocha@0.0.7
+```
+
+
+## 发布（Publish）
+当准备好与他人共享某个组件时，开发人员会使用遵循约定的版本号标记该组件。
+> When a component is ready to be shared with others, the developer tags it with a version number following the semver conventions.
+
+Bit存储组件源代码的快照，使它可以在进行任何更改时通知使用者。
+> Bit stores the snapshot of the component's source code, enabling it to notify consumers when any changes are made.
+
+开发人员可以将组件的标记版本导出到中央服务器。 集中式服务器可以是自有的，也可以将bit.dev云服务用作集中式服务器。
+> The developer can export a tagged version of the component to a centralized server. The centralized server can be self owned or the bit.dev cloud service can be used as the centralized server.
+
+### 组件版本标签（Tag component's version）
+要为组件设置版本，请使用`bit tag`命令。
+> To set a version for your components, use the bit tag command.
+
+Bit锁定组件文件及其依赖关系图的状态。 现在，已标记的版本是不可变的（无法更改）。
+> Bit locks the state of the component's files and its dependency graph. The tagged version is now immutable (cannot be changed).
+
+在标记组件时，Bit首先运行组件的构建和测试任务。
+> When tagging components, Bit first runs the build and test tasks for the components.
+
+您可以使用`--all`标志来标记工作空间中所有更改的组件。
+> You can use the --all flag to tag all the components that changed in the workspace.
+
+```shell
+$ bit tag --all 1.0.0
+3 components tagged | 3 added, 0 changed, 0 auto-tagged
+added components: components/button@1.0.0, components/login@1.0.0, components/logo@1.0.0
+```
+
+### 创建远程Scope（Create remote scope）
+要在不同项目之间共享组件，您需要将组件存储在远程范围内。
+> To share components between different projects, you need to store the components in a remote scope.
+
+要设置您自己的Bit服务器，请按照此处的说明进行操作。
+> To setup your own Bit server follow the instructions here.
+
+或者，您可以使用bit.dev云托管来共享组件。 通过bit.dev服务器共享组件。
+> Alternatively, you can use bit.dev cloud hosting to share components. To share components via bit.dev server.
+
+在bit.dev上创建一个帐户
+> Create an account on bit.dev
+
+按照bit.dev上的步骤创建集合。 在新创建的集合页面上，您可以看到导出命令，您稍后将使用该命令来导出组件。
+> Follow the steps on bit.dev to create a collection. On your newly created collection page you can see the export command that you will later use to export the components.
+
+对您自己的服务器或bit.dev运行Bit登录（如果您已经登录浏览器，Bit登录将自动登录到该帐户）。
+> Run bit login to your own server or to bit.dev (if you are already logged in the browser, bit login will automatically log in to that account).
+
+``` shell
+$ bit login
+Your browser has been opened to visit: http://bit.dev/bit-login?redirect_uri=http://localhost:8085...
+```
+
+您现在有了一个收藏夹。 在bit.dev上，您可以看到导出命令，稍后将使用该命令将组件导出到该集合。
+> You now have a collection. On bit.dev you can see the export command that you will use later to export components to this collection.
+
+### 导出组件（Export components）
+使用`bit export`命令将组件从工作区发布到bit.dev。
+> Use the bit export command to publish the components from your workspace to bit.dev.
+
+```shell
+$ bit export user-name.collection-name
+exported 3 components to collection user-name.collection-name
+```
+
+转到您的bit.dev集合。 所有组件均已导出。 尝试为您的组件创建并保存示例，Bit也会在集合页面中显示为预览。
+> Head over to your bit.dev collection. All the components are exported. Try creating and saving examples for your components, which Bit will also show as previews in the collection’s page.
+
+
+### 安装组件（Install component）
+导出后，该组件现在可供其他开发人员以以下两种方式之一使用：安装或导入。
+> Once exported, the component is now available for consumption by other developers in one of two ways: install or import.
+
+现在，您可以使用Npm或Yarn安装组件。 与任何其他NPM软件包一样，该组件将安装有构建工件（例如dist文件夹）。 已安装的组件位于node_modules文件夹中。
+> You can now use Npm or Yarn to install the components. The component will be installed with build artifacts (e.g., the dist folder) like any other NPM package. The installed component resides in the node_modules folder.
+
+如果使用NPM或Yarn，则NPM应该将Bit配置为作用域注册表（Bit登录时Bit会自动配置它）：
+> If using NPM or Yarn, NPM should configure Bit as a scoped registry (Bit automatically configure it when doing bit login):
+
+```shell
+npm config set @bit:registry https://node.bit.dev
+```
+
+然后使用组件页面上的install命令，使用您最喜欢的软件包管理器来安装组件。 例：
+> Then install components with your favorite package manager using the install command on the component’s page. Example:
+
+```shell
+npm i @bit/mui-org.material-ui.button
+```
+
+## 引入&变更（Import & modify）
+您可能需要修改组件源代码（例如，修复错误或更改功能）。 为此，您需要将组件导入项目并应用更改。
+> You may want to modify the component source code (for example, to fix a bug or change the functionality). To do so, you need to import the component into your project and apply the changes.
+
+现在可以对已更新的组件进行标记并重新导出，以便该组件的其他使用者可以获取更新。
+> The updated component can now be tagged and re-exported so that other consumers of the component get the update.
+
+### 引入组件（Import component）
+因为Bit隔离了组件并将它们与存储库分离，所以您可以从代码库中的任何存储库开发Bit组件。
+> Because Bit isolates components and decouples them from the repository, you can develop Bit components from any repository in your codebase.
+
+要从使用库中开发组件，请使用`bit import`命令：
+> To develop a component from the consuming repository use the bit import command:
+
+```shell
+bit import mui-org.material-ui/button
+```
+
+注意：如果更改是临时的，并且您想恢复使用node_modules中的组件，则可以使用弹出命令从本地工作区中删除组件，然后将它们与NPM客户端一起安装。
+> Note: If your changes are temporary, and you would like to revert to using the components from node_modules, you can use the eject command to remove components from the local workspace and install them with the NPM client.
+
+### 发布组件变更（Publish component changes）
+对导入的组件所做的更改可以在集合中进行更新，并可以在整个项目中使用。
+> Changes made to imported components can be updated in the collection and consumed across projects.
+
+完成更改后，可以将它们作为集合中组件的新版本进行更新（前提是您有权更新集合）。 或者，可以将更改后的组件导出为新组件。
+> When you’re done making changes, you can update them as a new version of the component in the collection (given you have permission to update the collection). Alternatively, the changed component can be exported as a new component.
+
+使用集合中的新版本更新组件时，每个包含该组件的存储库都可以获取更改。
+> When a component is updated with a new version in the collection, every repository that houses that component can get the changes.
+
+
+## 合并（Merge）
+使用Bit，在项目中导入和修改组件时，它仍会接收对原始组件所做的修改。 可以在原始项目以及导入组件的任何项目中获取更新。 这有助于团队在开发来自不同项目的组件时同步更改。
+> With Bit, when a component is imported and modified inside a project, it still receives modifications made to the original component. Updates can be obtained in the original project as well as any project that imported the component. This helps teams sync changes when developing components from different projects.
+
+```shell
+bit import mui-org.material-ui/button
+bit checkout mui-org.material-ui/button --interactive-merge
+```
