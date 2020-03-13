@@ -2,9 +2,10 @@
   "name": "clunt.github.io",
   "version": "1.0.0",
   "description": "本博客根据文件(*.md)目录位置生成文章连接",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "build": "node ./build/run.js"
+    "build": "node ./build/build.js",
+    "deploy": "node ./build/deploy.js"
   },
   "repository": {
     "type": "git",
