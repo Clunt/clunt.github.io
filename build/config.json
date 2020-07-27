@@ -1,7 +1,7 @@
 {
   "source": "blog",
   "ignore": {
-    "directory": ["build", "node_modules", ".git"],
+    "directory": ["build", "node_modules", ".git", "TODO"],
     "files": [".DS_Store", ".gitignore", ".gitempty", "README.md", "content.md", ".*(png|jpg)", ".*TODO.md$"]
   }
 }
